@@ -136,7 +136,6 @@ a {
 }
 
 .princ {
-  background-color: #000;
   color: rgba(0, 0, 0, 0);
   border-radius: 10px;
   width: 18%;
@@ -157,6 +156,7 @@ a {
   -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
 }
 .btn1{
+  background-color: #000;
   position: absolute;
   margin-top: -392px;
   margin-left: 695px;
@@ -570,22 +570,27 @@ a {
 .texto1{
   position: absolute;
   margin-top: -335px;
-  margin-left: 163px;
-  width: 61%;
+  margin-left: 234px;
+  width: 72%;
   height: 46%;
   background-color: #fff;
   color: #000;
   border: #000 solid 2px;
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  padding-top: 6%;
-  padding-left: 20px;
+  padding-top: 3%;
+  padding-left: 16px;
   transition: all 1s;
+  align-content: center;
   box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 26px 23px 86px -24px rgba(0, 0, 0, 0.75);
 }
 
+h3{
+  top: 0;
+  bottom: 0;
+}
 
 .lista1{
   width: 71%;

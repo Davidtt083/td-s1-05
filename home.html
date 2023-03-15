@@ -22,40 +22,87 @@
     <div class="gris"></div>
     <div class="negro"></div>
   </div>
-  <div class="princ btn1" onclick="mostrar()" id="btn1">
+  <div class="princ btn1" onclick="mostrarp(1,2)" id="btn1">
     <p>Introducción</p>
     <div class="logo1 plus"><img src="images\plus.png" alt=""></div>
   </div>
   <div class="contep">
 
-    <div class="princ novisited btn2" id="btn2">
+    <div class="princ hide btn2" onclick="mostrarp(2,3)" id="btn2">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ novisited btn3" id="btn3">
+    <div class="princ hide btn3" onclick="mostrarp(3,4)" id="btn3">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ novisited btn4" id="btn4">
+    <div class="princ hide btn4" onclick="mostrarp(4,5)" id="btn4">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ novisited btn5" id="btn5">
+    <div class="princ hide btn5" onclick="mostrarp(5,6)" id="btn5">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ novisited btn6" id="btn6">
+    <div class="princ hide btn6" onclick="mostrarp(6,7)" id="btn6">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
 
-    <div class="princ novisited btn7" id="btn7">
+    <div class="princ hide btn7" onclick="mostrarp(7,8)" id="btn7">
       <div class="logo1"><img src="images\plus.png" alt=""></div>
     </div>
   </div>
 
-  <div class="texto1 hide" id="text1">
-    <h3>¿Qué indicadores se han definido para medir eficiencia de procesos (<i>operational excellence</i>)?
-    </h3>
+  <div class="texto1 hide align-items-center" id="text1">
+    <div class="d-flex align-content-center flex-wrap">
+      <h3>Introducción</h3>
+      <p>Es una de las propuestas más radicales para cambiar el chip en nuestra empresa frente a lo que ha sido la
+        estructura de un equipo tradicional y la desarrolló Matt Mullenweg, CEO de Auttomatic, empresa que está detrás de
+        WordPress, una de las plataformas más conocidas para crear páginas web y toda una estructura digital de páginas
+        web en las empresas. ​
+        Matt Mullenweg propuso estos cinco niveles de trabajo ya que Auttomatic es una empresa 100 % sin oficinas
+        centrales y con equipos 100 % distribuidos geográficamente, que han tratado de ir ascendiendo por esa pirámide de
+        cinco niveles de teletrabajo.​
+        Así que vamos a revisar a detalle los cinco niveles:
+      </p>
+    </div>
+  </div>
+
+  <div class="texto1 hide" id="text2">
+    <h3>Nivel 0</h3>
+    <p>El nivel cero es cuando el trabajo solo puede realizarse si te encuentras físicamente presente.</p>
+  </div>
+
+  <div class="texto1 hide" id="text3">
+    <h3>Nivel 1​</h3>
+    <p>El primer nivel es el que se denomina “sin acción deliberada” y es cuando las empresas no han hecho nada para
+      apoyar el trabajo remoto, no dan facilidades, no aportan herramientas y simplemente se han tenido que ver forzadas
+      a teletrabajar en temas puntuales, pero cuanto antes intentan volver a la presencialidad.</p>
+  </div>
+
+  <div class="texto1 hide" id="text4">
+    <h3>Nivel 2​</h3>
+    <p>El segundo nivel es el de “recrear” y aquí es donde seguramente está la mayoría de las empresas, tratan
+      simplemente de aplicar el mismo método de trabajo presencial, con reuniones ineficientes e innecesarias, con
+      interrupciones, comunicación en tiempo real, llamadas, etcétera; excepto que ahora es <i>online</i>. Así que, si ya
+      existían problemas en el entorno físico, ahora podrían existir más porque se añaden todavía más inconvenientes del
+      entorno <i>online</i>. ​
+
+      Aquí todavía no hemos pasado a los niveles donde realmente se obtienen los beneficios de teletrabajar, nos
+      quedamos en los niveles que nos bloquean, donde parece que el teletrabajo no es la mejor opción. </p>
+  </div>
+
+  <div class="texto1 hide" id="text5">
+    <h3>Nivel 3​</h3>
+    <p>El tercer nivel es cuando las empresas empiezan a adaptarse al medio de manera no muy sofisticada, pero con
+      herramientas por ejemplo como un Google Docs u otras herramientas para compartir documentos en la nube,
+      infraestructura de <i>software</i> adicional, así como mejores equipamientos para optimizar el trabajo remoto. Se
+      empiezan a sacar los aspectos positivos de teletrabajar; pero los niveles realmente interesantes son el cuarto y
+      quinto, vamos a revisarlos.</p>
+  </div>
+
+  <div class="texto1 hide" id="text6">
+    <h3>Nivel 4​</h3>
     <p>El cuarto es el nivel realmente interesante, aquí tendríamos que plantearnos para qué departamentos, equipos o
       qué parte del equipo sería más eficiente si se trabaja una serie de días en la oficina y otra serie de días en
       casa, cuál es la combinación óptima de todo esto. Pasar al cuarto nivel y de verdad sacar el máximo provecho del
@@ -70,26 +117,10 @@
       teletrabajo.</p>
   </div>
 
-  <div class="texto1 hide" id="text2">
-    <h3>¿Qué indicadores se han definido para medir la experiencia de cliente?
-    </h3>
-    <ul class="lista1">
-      <li>Experiencia de cliente global.​</li>
-      <li>Experiencia de cliente en cada parte del proceso (modelo del pirata o modelo AAARRR).</li>
-      <li>Satisfacción del cliente en cada parte del proceso.​​</li>
-      <li>Reconoce nuestra marca.​</li>
-      <li>Resultados de interacción con el cliente.​​</li>
-    </ul>
-  </div>
-
-  <div class="texto1 hide" id="text3">
-    <h3>¿Qué indicadores se han definido para medir la experiencia del trabajador?​</h3>
-    <ul class="lista1">
-      <li>Experiencia de los trabajadores locales/remotos/propios/externos.​</li>
-      <li>Productividad (cuánto tiempo están dedicando a cada una de las aplicaciones de trabajo).</li>
-      <li>Parámetros de motivación personal del trabajador.</li>
-      <li>Sensación de estar a gusto en la empresa.​</li>
-    </ul>
+  <div class="texto1 hide" id="text7">
+    <h3>Nivel 5​</h3>
+    <p>El quinto nivel es un nivel utópico, es el “nirvana”. Este sería el nivel en el que una empresa con un equipo
+      distribuido trabajaría mejor que cualquier empresa de la historia con un equipo no distribuido y centralizado.</p>
   </div>
 
   <!-------------scripts------------------>

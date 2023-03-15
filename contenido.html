@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Page Transitions</title>
+  <link rel="stylesheet" href="./style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/c4b7d7f020.js" crossorigin="anonymous"></script>
+</head>
+
+<body style="background-color: #008aff;">
+  <div class="contenedor">
+    <div class="headerConte">
+      <h1>Caso 1</h1>
+      <p>Integración del Canvas partiendo de una idea: Canvas de modelo de negocio de Lizit.</p>
+    </div>
+    <div class="childCanvas">
+      <div class="modCanvas socClave">
+        <p>Socios clave</p>
+      </div>
+      <div class="intermod">
+        <div class="inter2">
+          <div class="modCanvas actClave">
+            <p>Actividades clave</p>
+          </div>
+          <div class="modCanvas recClave">
+            <p>Recursos clave</p>
+          </div>
+        </div>
+        <div class="modCanvas propValor">
+          <p>Propuesta de valor</p>
+        </div>
+        <div class="inter2">
+          <div class="modCanvas relClien">
+            <p>Relación con el cliente</p>
+          </div>
+          <div class="modCanvas canales">
+            <p>Canales</p>
+          </div>
+        </div>
+      </div>
+      <div class="modCanvas segmCon">
+        <p>Segmento de consumidores</p>
+      </div>
+    </div>
+    <div class="childCanvas2">
+      <div class="modCanvas estructCostos">
+        <p>Estructura de costos</p>
+      </div>
+      <div class="modCanvas fluijo">
+        <p>Flujo de ingresos</p>
+      </div>
+    </div>
+    <a class="close" href="home.html"><span class="regresar"><i class="fa-regular fa-circle-left"></i></span></a>
+  </div>
+
+  <div class="hide" id="play-pause"> <!--propValorrec-->
+    <div class="reproductor"><i id="iconrep" class="fa-regular fa-circle-play"></i></div>
+    <p class="titulos">Propuesta de valor</p>
+  </div>
+
+  <div class="hide" id="play-pause2"><!--modOperativo-->
+    <div class="reproductor"><i id="iconrep2" class="fa-regular fa-circle-play"></i></div>
+    <p class="titulos mo">El modelo operativo​</p>
+  </div>
+
+  <div class="hide" id="play-pause3"><!--modExp-->
+    <div class="reproductor"><i id="iconrep3" class="fa-regular fa-circle-play"></i></div>
+    <p class="titulos mo">El modelo experiencial​</p>
+  </div>
+
+  <div class="hide" id="play-pause4"><!--modFinan-->
+    <div class="reproductor"><i id="iconrep4" class="fa-regular fa-circle-play"></i></div>
+    <p class="titulos mf">El modelo financiero​​</p>
+  </div>
+  <div class="conexto" id="contexto1">
+    <p id="text1">Contexto <i id="iconrepContext" class="fa-regular fa-circle-play"></i></p>
+  </div>
+
+  <div id="popup" class="hide">
+    <div class="popup">
+      <a class="close" href="#" onclick="document.location.reload(true)"><span class="equis"><i class="fa-regular fa-circle-xmark"></i></span></a>
+      <div class="content">
+        <!--<div class="btnplay2" id="btnplay2"><i id="iconrepfin" class="fa-regular fa-circle-play"></i></div>-->
+        <h1>Lizit</h1>
+        Como pudiste notar, Lizit es una empresa que tiene un Canvas de modelo de negocio que inicia desde la propuesta
+        de valor para un segmento de clientes específicos.
+      </div>
+      <img src="images\lizit.jfif" alt="" class="logo">
+      
+    </div>
+    
+  </div>
+
+  <!---------Audios--------->
+  <audio id="track1" onended="Show1()">
+    <source src="Track_0.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track2" onended="Show2()">
+    <source src="audio/Track_0_01.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track3" onended="Show3()">
+    <source src="audio/Track_1.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track4" onended="Show4()">
+    <source src="audio/Track_2.mp3" type="audio/mpeg" />
+  </audio>
+
+  <audio id="track5" onended="Show5()">
+    <source src="audio/Track_3.mp3" type="audio/mpeg" /><!--../audio/Track_3.mp3-->
+  </audio>
+
+  <audio id="track6" onended="Show6()">
+    <source src="Track_4.mp3" type="audio/mpeg" />
+  </audio>
+  <!---------Audios--------->
+
+  <!-- partial -->
+  <script src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+  <script src="./script.js"></script>
+</body>
+
+
+</html>
